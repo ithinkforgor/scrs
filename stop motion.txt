@@ -1,12 +1,22 @@
-local me = game.Workspace.Jack257_BackWithHax.HumanoidRootPart
+local me = game.Workspace.Jack257_BackWithHax
+local meroot = me.HumanoidRootPart
+
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(v)
 	if v:byte() == 114 then
-		if me.Anchored == true then
-			me.Anchored = false
+		if meroot.Anchored == true then
+			
+			for i,v in pairs(me.Humanoid:GetPlayingAnimationTracks()) do
+				v:Play()
+			end
+			meroot.Anchored = false
 		else
-			me.Anchored = true
+			
+			for i,v in pairs(me.Humanoid:GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
+			meroot.Anchored = true
 		end
-		print(me.Anchored)
+		print(meroot.Anchored)
 	end
 end)
 
