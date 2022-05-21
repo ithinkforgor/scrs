@@ -16,7 +16,6 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(v)
 			end
 			meroot.Anchored = true
 		end
-		print(meroot.Anchored)
 	end
 end)
 
