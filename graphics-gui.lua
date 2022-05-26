@@ -28,7 +28,7 @@ local Window = OrionLib:MakeWindow({Name = "Graphics Enchancer", HidePremium = f
 local Tab = Window:MakeTab({
 	Name = "Spec's new",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 Tab:AddButton({
 	Name = "2016 new",
@@ -47,7 +47,7 @@ Tab:AddButton({
 local Tab = Window:MakeTab({
 	Name = "Spec's old",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 Tab:AddButton({
 	Name = "2016 old",
@@ -78,7 +78,7 @@ Tab:AddDropdown({
 local Tab = Window:MakeTab({
 	Name = "other",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 Tab:AddButton({
 	Name = "graphics",
