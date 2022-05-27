@@ -28,7 +28,7 @@ local Window = OrionLib:MakeWindow({Name = "Graphics Enchancer", HidePremium = f
 local Tab = Window:MakeTab({
 	Name = "Spec's new",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
 })
 Tab:AddButton({
 	Name = "2016 new",
@@ -47,7 +47,7 @@ Tab:AddButton({
 local Tab = Window:MakeTab({
 	Name = "Spec's old",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
 })
 Tab:AddButton({
 	Name = "2016 old",
@@ -78,7 +78,13 @@ Tab:AddDropdown({
 local Tab = Window:MakeTab({
 	Name = "other",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
+})
+Tab:AddButton({
+	Name = "spec's just blue",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/ithinkforgor/scrs/main/just%20blue.lua'))()
+  	end    
 })
 Tab:AddButton({
 	Name = "graphics",
@@ -86,6 +92,3 @@ Tab:AddButton({
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ithinkforgor/hub/main/graphics/graphics.lua'))()
   	end    
 })
-
-
-
